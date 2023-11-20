@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator App for iPhone - Restaurant, Hairdresser, Salon</title>
+  <meta name="description" content="Use our Tip Calculator app, perfect for iPhone users at restaurants, salons, and hairdressers. Calculate your tips easily and quickly.">
+  <link rel="canonical" href="https://www.calculatetoday.com/restaurant-tip-calculator-app/" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icon/icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../icon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon/icon-16x16.png">
+  <meta name="msapplication-square70x70logo" content="../icon/icon-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="../icon/icon-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="../icon/icon-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="../icon/icon-310x310.png" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Tip Calculator</h1>
+    <p>Perfect for calculating tips at restaurants, salons, and hairdressers. Our app makes it easy and quick.</p>
+    <div class="form-group">
+      <label for="billAmount">Bill Amount</label>
+      <input type="number" id="billAmount" placeholder="Enter bill amount">
+    </div>
+
+    <!-- Tip Percentage -->
+    <div class="form-group">
+      <label for="tipPercentage">Tip Percentage (%)</label>
+      <select id="tipPercentage"></select>
+    </div>
+
+    <!-- Split Between -->
+    <div class="form-group">
+      <label for="peopleCount">Split Between (People)</label>
+      <select id="peopleCount"></select>
+    </div>
+
+    <div class="form-group">
+      <button id="calculateButton" class="calculateButton">Calculate Tip</button>
+    </div>
+    <div id="tipResult" class="payment-result"></div>
+  </div>
+  <footer>
+    <div class="footer-logo">
+        <a href="https://www.calculatetoday.com/">
+            <img src="../icon/icon-90x90.png" alt="Calculate Today Logo" width="60" height="60">
+        </a>
+    </div>
+    <div class="contact-author">
+        <a href="mailto:admin@calculatetoday.com">
+            <img src="../Contact2-90x90.png" alt="Contact the Author" width="60" height="60">
+        </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* 基础样式 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8e7e7; /* 更深的灰色背景 */
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 左对齐 */
+  gap: 10px;
+}
+
+.tool-card {
+  background-color: #fefefe; /* 深灰色背景，以增强对比 */
+  border: 2px solid #666667;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 20px); /* 减去间隙的宽度 */
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tool-card h2 {
+  margin-top: 0;
+  text-align: center; /* 标题居中对齐 */
+}
+
+.tool-card p {
+  font-size: 0.9em;
+  color: #666;
+  text-align: left; /* 简介左对齐 */
+}
+
+@media only screen and (max-width: 600px) {
+  .tool-card {
+    width: 100%; /* 小屏幕上占满整个宽度 */
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-logo, .contact-author {
+  flex: 1;
+}
+
+@media only screen and (min-width: 481px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .footer-logo {
+    order: 1;
+    max-height: 80px;
+  }
+
+  .contact-author {
+    order: 2;
+    color: #fff !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

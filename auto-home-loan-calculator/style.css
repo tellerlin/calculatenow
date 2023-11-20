@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #008CBA;
+  --secondary-color: #0099CC;
+  --text-color: #fff;
+  --background-color: #333;
+  --white-color: #ffffff;
+  --input-padding: 10px;
+  --input-margin-top: 5px;
+  --input-border-width: 1px;
+  --input-border-radius: 4px;
+  --button-padding: 20px;
+  --button-font-size: 20px;
+  --footer-padding: 10px;
+  --footer-logo-margin: 10px;
+  --input-background-color: #555;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  touch-action: manipulation;
+}
+
+.title {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: var(--background-color);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+.form-group input,
+.form-group select {
+  padding: var(--input-padding);
+  margin-top: var(--input-margin-top);
+  border: var(--input-border-width) solid #777;
+  border-radius: var(--input-border-radius);
+  box-sizing: border-box;
+  width: 95%;
+  background-color: var(--input-background-color);
+  color: var(--text-color);
+  font-size: 22px; /* 修改字体大小为 22px */
+}
+
+.calculateButton {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: var(--button-font-size);
+  padding: var(--button-padding);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: var(--input-border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin-top: var(--input-margin-top);
+}
+
+.calculateButton:hover {
+  background-color: var(--secondary-color);
+}
+
+.payment-result {
+  font-size: 24px;
+  color: #FFD700;
+  margin-top: 20px;
+}
+
+.contact-author {
+  color: var(--white-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+footer {
+  padding: var(--footer-padding);
+  background-color: var(--background-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo a {
+  display: block;
+  margin-right: var(--footer-logo-margin);
+}
+
+.contact-author {
+  color: var(--white-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 500px) {
+  body {
+  padding: 10px;
+  }
+
+  .title {
+  font-size: 1.5em;
+  }
+
+  .container {
+  width: 100%;
+  padding: 10px;
+  }
+
+  .form-group label {
+  font-size: 14px;
+  }
+
+  .calculateButton {
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  }
+
+  .payment-result {
+  font-size: 18px;
+  }
+}

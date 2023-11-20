@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 更新 viewport 设置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator</title>
+  
+  <!-- 更新描述，包含新的关键词 -->
+  <meta name="description" content="Use our Loan Calculator for auto, home, mortgage, and personal equity loans. Compare bank rates and secure the best deal for your car or home loan.">
+  
+  <!-- 添加 keywords 标签 -->
+  <meta name="keywords" content="auto loan calculator, car loan, home loan, mortgage, personal loan, equity loan">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  
+  <link rel="canonical" href="https://www.calculatetoday.com/auto-home-loan-calculator/" />
+  <!-- 标准 favicon -->
+  <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../icon/icon-180x180.png">
+  
+  <!-- 对于 Android 和其他设备，指定一个较大的图标 -->
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon-192x192.png">
+  
+  <!-- 为了更好的兼容性，还可以添加以下尺寸的图标 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../icon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon/icon-16x16.png">
+
+  <!-- 额外的 Microsoft Tiles -->
+  <meta name="msapplication-square70x70logo" content="../icon/icon-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="../icon/icon-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="../icon/icon-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="../icon/icon-310x310.png" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Loan Calculator</h1>
+    <div class="form-group">
+      <label for="principal">Loan Amount</label>
+      <input type="tel" id="principal" placeholder="Enter amount">
+    </div>
+    <div class="form-group">
+      <label for="rate">Interest Rate (%)</label>
+      <input type="number" id="rate" placeholder="Enter rate">
+    </div>
+    <div class="form-group">
+      <label for="years">Loan Term (years)</label>
+      <input type="tel" id="years" placeholder="Enter term">
+    </div>
+    <button id="calculateButton" class="calculateButton">Calculate</button>
+    <div id="monthlyPayment" class="payment-result">
+      Your monthly payment will be displayed here.
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo">
+      <a href="https://www.calculatetoday.com/">
+        <img src="../icon/icon-90x90.png" alt="Calculate Today Logo" width="60" height="60">
+      </a>
+    </div>
+    <div class="contact-author">
+      <a href="mailto:admin@calculatetoday.com">
+        <img src="../Contact2-90x90.png" alt="Contact the Author" width="60" height="60">
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

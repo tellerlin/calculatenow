@@ -1,0 +1,163 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#gpa-calculator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+#gpa-calculator .gpa-system-selector-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#gpa-calculator label,
+#gpa-calculator .gpa-system-selector-container select {
+  width: auto;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+select, input {
+  padding: 10px;
+  border: 1px solid #777;
+  background-color: #555;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+select.grade, .delete-course-btn {
+  width: auto;
+  padding: 5px 10px;
+}
+
+input[type="number"].credits {
+  width: 84px;
+}
+
+input.invalid, select.invalid {
+  border-color: #f00;
+  background-color: #f88;
+}
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0099CC;
+}
+
+.delete-course-btn {
+  padding: 5px;
+  font-size: 12px;
+  min-width: 50px;
+}
+
+#gpa-result {
+  font-size: 24px;
+  color: #FFD700;
+  margin-top: 10px;
+}
+
+#error-message {
+  color: #f00;
+  font-weight: bold;
+}
+
+footer {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo a {
+  display: block;
+}
+
+.contact-author {
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 响应式设计调整 */
+@media screen and (max-width: 600px) {
+
+  body {
+    font-size: 18px;
+  }
+  
+  select, input[type="number"] {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .delete-course-btn {
+    padding: 5px;
+    font-size: 14px;
+    min-width: 40px;
+  }
+
+  #gpa-calculator .gpa-system-selector-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #gpa-calculator label,
+  #gpa-calculator .gpa-system-selector-container select {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /* 在中等屏幕上应用的样式，可以根据需要进行调整 */
+  body {
+    font-size: 18px;
+  }
+  
+  select, input[type="number"] {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .delete-course-btn {
+    padding: 5px;
+    font-size: 16px;
+    min-width: 50px;
+  }
+}

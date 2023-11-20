@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator for Men, Women, and Kids | Check Your BMI</title>
+  <meta name="description" content="Use our BMI calculator for men, women, kids, and teens to find out your BMI and learn what it means for your health.">
+  <link rel="canonical" href="https://www.calculatetoday.com/bmi-calculator-men-women-kids/" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icon/icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../icon/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon/icon-16x16.png">
+  <meta name="msapplication-square70x70logo" content="../icon/icon-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="../icon/icon-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="../icon/icon-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="../icon/icon-310x310.png" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p>Calculate BMI for men, women, and children. Choose between Metric and Imperial units.</p>
+        <form id="bmiForm">
+            <div class="custom-radio">
+                <input type="radio" id="radioImperial" name="unit" value="imperial" checked>
+                <label for="radioImperial">Imperial</label>
+                <input type="radio" id="radioMetric" name="unit" value="metric">
+                <label for="radioMetric">Metric</label>
+            </div>
+
+            <div>
+                <label for="ageYears">Age (years):</label>
+                <input type="number" id="ageYears" name="ageYears" min="2" max="120" value="22">
+            </div>
+            <div>
+                <label for="ageMonths">Age (months):</label>
+                <input type="number" id="ageMonths" name="ageMonths" min="0" max="12" value="0">
+            </div>
+
+            <div id="metricInputs">
+                <div>
+                    <label for="heightMetric">Height (in centimeters):</label>
+                    <select id="heightMetric"></select>
+                </div>
+                <div>
+                    <label for="weightMetric">Weight (in kilograms):</label>
+                    <select id="weightMetric"></select>
+                </div>
+            </div>
+
+            <div id="imperialInputs" style="display: none;">
+                <div>
+                    <label for="heightImperialFeet">Height (feet):</label>
+                    <select id="heightImperialFeet"></select>
+                </div>
+                <div>
+                    <label for="heightImperialInches">Height (inches):</label>
+                    <select id="heightImperialInches"></select>
+                </div>
+                <div>
+                    <label for="weightImperial">Weight (in pounds):</label>
+                    <select id="weightImperial"></select>
+                </div>
+            </div>
+
+            <button type="submit">Calculate BMI</button>
+        </form>
+
+        <div id="result"></div>
+        <div id="health-advice"></div>
+        <div id="bmi-progress-bar" style="width: 0%; height: 20px; background-color: green; border-radius: 5px; margin-top: 10px;"></div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="https://www.calculatetoday.com/">
+                <img src="../icon/icon-90x90.png" alt="Calculate Today Logo" width="60" height="60">
+            </a>
+        </div>
+        <div class="contact-author">
+            <a href="mailto:admin@calculatetoday.com">
+                <img src="../Contact2-90x90.png" alt="Contact the Author" width="60" height="60">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
